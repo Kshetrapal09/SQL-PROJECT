@@ -46,6 +46,6 @@ While training hours are high, they are not consistently linked to better perfor
 * **Tool Used:** MySQL (All analysis performed via AVG(), MIN(), MAX(), GROUP BY, ORDER BY and complex queries).
 * **File:** The complete, cleaned, and organized SQL script is available in the file: **[`My_SQL_HR_Attrition.sql`](./My_SQL_HR_Attrition.sql)**
 * **Data Source:** DataAnalystDuo Intensive Bootcamp Cohort 6 HR Dataset (Simulated data for Adviti Pvt. Ltd.).
-* **Visualization:** 
+* * **Visualization:** ![Key Attrition Drivers: Compensation Satisfaction](<https://github.com/Kshetrapal09/SQL-PROJECT/blob/main/Screenshot%202025-10-08%20103104.png>)
 
 ---
