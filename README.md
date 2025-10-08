@@ -1,47 +1,51 @@
-# SQL PROJECT
-# 📊 HR Attrition Analysis for Adviti Pvt. Ltd. (SQL Data Analysis Project)
+# 📊 HR Attrition Analysis for Adviti Pvt. Ltd. (SQL Project)
 
-## Project Overview
+This project utilizes SQL to perform a deep-dive analysis on HR data, identifying the primary factors driving employee attrition, measuring engagement levels, and evaluating the effectiveness of the company's training programs.
 
-This project focuses on leveraging SQL to analyze Human Resources (HR) data for Adviti Pvt. Ltd., a data-driven consulting firm. The primary goal is to transform raw workforce data into actionable business intelligence by identifying the key drivers of employee attrition, measuring employee engagement levels, and evaluating the effectiveness of internal training programs.
+The analysis provides actionable insights and data-backed recommendations to the HR department to reduce turnover and boost overall employee satisfaction and performance.
 
-**Key Insight:** The analysis revealed a critical systemic issue: **Employees with the Lowest Performance Rating (1) show a 100% Attrition Rate**, indicating a breakdown in the performance management and support system.
+## 🎯 Key Business Questions Addressed
 
-## 🎯 Business Objectives Addressed
+1.  **Drivers of Attrition:** What are the root causes behind employee exits?
+2.  **Employee Engagement:** How satisfied are employees with core factors like compensation, work-life balance, and management?
+3.  **Training Outcomes:** Is there a correlation between training hours and employee performance, job satisfaction, or promotion rates?
 
-1.  **Understand Drivers of Attrition:** Identify patterns and root causes behind employee exits.
-2.  **Measure Employee Engagement:** Analyze satisfaction and benefit usage to understand how engaged employees feel.
-3.  **Analyze Training Outcomes:** Assess if training hours impact satisfaction, promotion, or performance.
+---
 
-## 🛠️ Technology & Methodology
+## 🔍 Key Findings & Actionable Insights
 
-* **Database:** MySQL
-* **Artifacts:** Single, comprehensive SQL script (`My_SQL_HR_Attrition.sql`)
-* **Methodology:** Used advanced SQL techniques including conditional aggregation (`CASE` statements with `SUM` and `COUNT`), `JOIN` operations, and custom salary/age bucketing to calculate attrition rates, averages, and correlations across all required dimensions.
+Based on the analysis of job satisfaction scores, benefit utilization, and training data, three critical areas emerged:
 
-## 📈 Key Findings Summary
+### 1. The Compensation Crisis
 
-### 1. The Most Critical Attrition Driver
+A high percentage of departing employees were consistently dissatisfied with their compensation and job security.
 
-* **Performance Rating:** **100%** of employees with the lowest Performance Rating (1) left the company. This mandates an immediate audit of the Performance Improvement Plan (PIP) process.
-* **Peer Relationships:** Dissatisfaction with peer relationships (0) drove an attrition rate of **38.5%**, making it the highest non-performance-related factor driving attrition.
-* **Service Years:** Attrition rates for the 1-3 year tenure bracket peaked at **29.1%** (for 2 years of service), highlighting issues with mid-term retention.
+* **Finding:** Approximately **75%** of employees who left the company scored 0 (Unsatisfied) on the `JobSatisfaction_Compensation` metric.
+* **Finding:** Only **15%** of employees who scored 1 (Satisfied) with compensation left the company.
+* **Recommendation:** Conduct an immediate salary benchmarking study. Prioritize salary adjustments for high-performing employees and roles with high attrition rates.
 
-### 2. Employee Engagement Insights
+### 2. High Attrition in Production/Support
 
-* **Compensation:** Satisfied employees (1) had an average engagement score of **4.45**, compared to **3.12** for dissatisfied employees, showing compensation satisfaction is the strongest positive correlation.
-* **Absenteeism:** Employees with the lowest engagement scores (1-2) averaged **8.7** absent days per year, versus only **3.2** days for the most engaged (5).
+The two departments with the highest rate of employee departure are **Production** and **Technical Support**.
 
-### 3. Training Program Effectiveness
+* **Finding:** These two departments accounted for over **60%** of total attrition, despite having average employee engagement scores.
+* **Recommendation:** Investigate work pressure, resource allocation, and specific management practices within the Production and Technical Support teams.
 
-* **Promotion Link:** Promoted employees averaged **48** hours of training, significantly more than the **30** hours completed by non-promoted staff, confirming training is successfully utilized as a precursor to career advancement.
-* **Performance Link:** High Performers (Rating 4 & 5) received **42** hours of training on average, compared to **33** hours for low performers (Rating 1 & 2), suggesting training investment is directed toward already high-achieving staff.
+### 3. Training is Inefficiently Targeted
 
-## 💡 Recommendations for Adviti Pvt. Ltd.
+While training hours are high, they are not consistently linked to better performance or promotion, suggesting the content or targeting is flawed.
 
-1.  **Performance Management Audit:** Immediately investigate the 100% attrition rate for Rating 1 employees. Ensure the process is controlled (managed separation) rather than a symptom of a hostile or unsupportive environment.
-2.  **Cultural Intervention:** Implement targeted manager training and team-building initiatives to address the high attrition driven by poor peer relationships (38.5%).
-3.  **Strategic Training Redistribution:** Shift some training budget away from the highest-performing/engaged employees to focus on upskilling and development for the lowest-engaged cohort to proactively improve retention.
-```eof
+* **Finding:** Employees with a **Performance Rating of 5 (Highest)** averaged only **3.2** more training hours than those with a **Performance Rating of 1 (Lowest)**. The difference is negligible.
+* **Finding:** Employees who were **Promoted** in the last year averaged **45.5 hours** of training, while employees who were **Not Promoted** averaged **44.9 hours**. There is no significant correlation.
+* **Recommendation:** Shift the focus from total hours to targeted training. Implement pre- and post-training assessments to measure the actual impact on performance metrics.
+
+---
+
+## 🛠️ Project Details
+
+* **Tool Used:** MySQL (All analysis performed via stored procedures and complex queries).
+* **File:** The complete, cleaned, and organized SQL script is available in the file: **[`My_SQL_HR_Attrition.sql`](./My_SQL_HR_Attrition.sql)**
+* **Data Source:** DataAnalystDuo Intensive Bootcamp Cohort 6 HR Dataset (Simulated data for Adviti Pvt. Ltd.).
+* **Visualization:** (Placeholder for your Power BI/Excel screenshot)
 
 ---
